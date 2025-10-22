@@ -1,27 +1,27 @@
 import ItemsInfo from "@/components/itemsInfo/itemsInfo";
 import GreenButton from "@/components/buttons/greenButton";
 import CardPlacesAndActivitiesHome from "@/components/cardPlacesAndActivities/cardPlacesAndActivitiesHome";
+import CarouselBackground from "@/components/Carousel/carouselBackground";
 
 export default function Home() {
   return (
     <main className="flex flex-col  justify-between">
-      <section className="w-full pt-32 pb-10 px-5 flex flex-col items-center justify-center bg-green-brand bg-fixed">
-        <h1 className="text-2xl text-white pb-3">Bienvenidos a</h1>
-        <img
-          className="h-40"
-          src="/images/Frontera_Trans.png"
-          alt="Frontera de los Andes"
-        />
-        <p className="text-white text-center py-10 md:mx-20">
-          Descubre una estadia unica en Villa Rio Hermoso, San Martin de los
-          Andes, donde la naturaleza y la comodidad se encuentran.
-        </p>
-        <div>
+      <section className="relative w-full pt-32 pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
+        {/* Carrusel de fondo */}
+        <CarouselBackground />
+
+        {/* Contenido sobre el fondo */}
+        <div className="relative z-10 flex flex-col items-center text-center">
+          <h1 className="text-2xl text-white pb-3 drop-shadow-md">Bienvenidos a</h1>
           <img
-            src="/images/carrouselHome/CabañasVerano.png"
-            alt="Cabañas"
-            className="size-96 h-auto rounded-lg"
+            className="h-40"
+            src="/images/Frontera_Trans.png"
+            alt="Frontera de los Andes"
           />
+          <p className="text-white text-center py-10 md:mx-20 drop-shadow-md">
+            Descubre una estadía única en Villa Río Hermoso, San Martín de los
+            Andes, donde la naturaleza y la comodidad se encuentran.
+          </p>
         </div>
       </section>
       <section className="p-5 md:px-20">
