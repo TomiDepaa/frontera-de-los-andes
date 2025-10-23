@@ -6,61 +6,76 @@ import CarouselBackground from "@/components/Carousel/carouselBackground";
 export default function Home() {
   return (
     <main className="flex flex-col justify-between">
-      <section className="relative w-full h-full pt-32 pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen lg:h-svh pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
         <CarouselBackground />
         <div className="relative z-10 flex flex-col items-center text-center">
-          <h1 className="text-2xl text-white pb-3 drop-shadow-md">Bienvenidos a</h1>
           <img
-            className="h-40"
+            className="h-40 lg:h-56"
             src="/images/Frontera_Trans.png"
             alt="Frontera de los Andes"
           />
-          <p className="text-white text-center py-10 md:mx-20 drop-shadow-md">
+          <h1 className="text-white text-center text-xl lg:text-3xl lg:font-medium pt-12 md:mx-20 lg:w-3/4 drop-shadow-md">
             Descubre una estadía única en Villa Río Hermoso, San Martín de los
             Andes, donde la naturaleza y la comodidad se encuentran.
-          </p>
+          </h1>
         </div>
+          <img
+          className="absolute z-10 bottom-36 animate-bounce" 
+          src="/images/icons/arrowDown.png" 
+          alt="Flecha hacia abajo" 
+        />
       </section>
-      <section className="p-5 md:px-20">
+      <section className="p-5 pt-14 md:px-20 lg:grid lg:grid-cols-2 ">
         <div>
           <div>
-            <div className="pt-14">
-              <h4 className="text-green-600 font-semibold">Relájate y disfruta</h4>
-              <h2 className="pt-1 text-3xl">
-                <strong>Escape Perfecto en el Sur Argentino</strong>
-              </h2>
-              <p className="pt-4 text-lg">
-                En Frontera de los Andes te esperan cabañas completamentes equipadas
-                en un entorno natural inigualable. Perfecto para familias, parejas,
-                amigos y aventureros.
-              </p>
-            </div>
-            <div className="pt-8 pb-8 space-y-5">
-              <ItemsInfo
-                img="/images/icons/forest.png"
-                title="Entorno Natural"
-                paragraph="Rodeado de bosques, ríos y montañas, ideal para desconectar y recargar energías."
-              />
-              <ItemsInfo
-                img="/images/icons/wifi.png"
-                title="Internet Satelital"
-                paragraph="Para que te mantengas conectado si lo necesitas."
-              />
-              <ItemsInfo
-                img="/images/icons/knife.png"
-                title="Cocina Equipada"
-                paragraph="Electrodomésticos modernos y utensilios de cocina para tu comodidad."
-              />
-            </div>
+            <h4 className="text-green-600 font-semibold">Relájate y disfruta</h4>
+            <h2 className="pt-1 text-3xl">
+              <strong>Escape Perfecto en el Sur Argentino</strong>
+            </h2>
+            <img
+            className="my-5 lg:hidden rounded-lg shadow-xxl w-full h-72 object-cover object-bottom"
+            src="/images/cabins/Cabaña2Tranquera.jpg"
+            alt="Frontera de los Andes"
+          />
+            <p className="pt-4 text-lg">
+              En Frontera de los Andes te esperan cabañas completamentes equipadas
+              en un entorno natural inigualable. Perfecto para familias, parejas,
+              amigos y aventureros.
+            </p>
+          </div>
+          <div className="pt-8 pb-8 space-y-5">
+            <ItemsInfo
+              img="/images/icons/forest.png"
+              title="Entorno Natural"
+              paragraph="Rodeado de bosques, ríos y montañas, ideal para desconectar y recargar energías."
+            />
+            <ItemsInfo
+              img="/images/icons/wifi.png"
+              title="Internet Satelital"
+              paragraph="Para que te mantengas conectado si lo necesitas."
+            />
+            <ItemsInfo
+              img="/images/icons/knife.png"
+              title="Cocina Equipada"
+              paragraph="Electrodomésticos modernos y utensilios de cocina para tu comodidad."
+            />
+          </div>
+          <div className="flex justify-center">
+            <GreenButton
+              text="Conocer Más"
+              path="/cabins"
+              img="/images/icons/arrowRight.png"
+            />
           </div>
         </div>
-        <div className="flex justify-center">
-          <GreenButton
-            text="Conocer Más"
-            path="/cabins"
-            img="/images/icons/arrowRight.png"
+        <div>
+          <img
+            className="hidden lg:block rounded-lg shadow-xxl w-full lg:h-1/2 object-cover object-bottom"
+            src="/images/cabins/Cabaña2Tranquera.jpg"
+            alt="Frontera de los Andes"
           />
         </div>
+
       </section>
       <section className="p-5 pt-20 md:px-20">
         <div className="space-y-2">
