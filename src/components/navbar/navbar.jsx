@@ -35,7 +35,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-green-brand m-3 rounded-full fixed top-0 right-0 left-0 z-10">
+    <header className="bg-green-brand m-3 rounded-full fixed top-0 right-0 left-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-3 px-5 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">

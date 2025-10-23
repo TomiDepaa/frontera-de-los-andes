@@ -5,12 +5,9 @@ import CarouselBackground from "@/components/Carousel/carouselBackground";
 
 export default function Home() {
   return (
-    <main className="flex flex-col  justify-between">
-      <section className="relative w-full pt-32 pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
-        {/* Carrusel de fondo */}
+    <main className="flex flex-col justify-between">
+      <section className="relative w-full h-full pt-32 pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
         <CarouselBackground />
-
-        {/* Contenido sobre el fondo */}
         <div className="relative z-10 flex flex-col items-center text-center">
           <h1 className="text-2xl text-white pb-3 drop-shadow-md">Bienvenidos a</h1>
           <img
@@ -25,33 +22,37 @@ export default function Home() {
         </div>
       </section>
       <section className="p-5 md:px-20">
-        <div className="pt-14">
-          <h4 className="text-green-600 font-semibold">Relájate y disfruta</h4>
-          <h2 className="pt-1 text-3xl">
-            <strong>Escape Perfecto en el Sur Argentino</strong>
-          </h2>
-          <p className="pt-4 text-lg">
-            En Frontera de los Andes te esperan cabañas completamentes equipadas
-            en un entorno natural inigualable. Perfecto para familias, parejas,
-            amigos y aventureros.
-          </p>
-        </div>
-        <div className="pt-16 pb-8 space-y-5">
-          <ItemsInfo
-            img="/images/icons/forest.png"
-            title="Entorno Natural"
-            paragraph="Rodeado de bosques, ríos y montañas, ideal para desconectar y recargar energías."
-          />
-          <ItemsInfo
-            img="/images/icons/wifi.png"
-            title="Internet Satelital"
-            paragraph="Para que te mantengas conectado si lo necesitas."
-          />
-          <ItemsInfo
-            img="/images/icons/knife.png"
-            title="Cocina Equipada"
-            paragraph="Electrodomésticos modernos y utensilios de cocina para tu comodidad."
-          />
+        <div>
+          <div>
+            <div className="pt-14">
+              <h4 className="text-green-600 font-semibold">Relájate y disfruta</h4>
+              <h2 className="pt-1 text-3xl">
+                <strong>Escape Perfecto en el Sur Argentino</strong>
+              </h2>
+              <p className="pt-4 text-lg">
+                En Frontera de los Andes te esperan cabañas completamentes equipadas
+                en un entorno natural inigualable. Perfecto para familias, parejas,
+                amigos y aventureros.
+              </p>
+            </div>
+            <div className="pt-8 pb-8 space-y-5">
+              <ItemsInfo
+                img="/images/icons/forest.png"
+                title="Entorno Natural"
+                paragraph="Rodeado de bosques, ríos y montañas, ideal para desconectar y recargar energías."
+              />
+              <ItemsInfo
+                img="/images/icons/wifi.png"
+                title="Internet Satelital"
+                paragraph="Para que te mantengas conectado si lo necesitas."
+              />
+              <ItemsInfo
+                img="/images/icons/knife.png"
+                title="Cocina Equipada"
+                paragraph="Electrodomésticos modernos y utensilios de cocina para tu comodidad."
+              />
+            </div>
+          </div>
         </div>
         <div className="flex justify-center">
           <GreenButton
@@ -127,14 +128,14 @@ export default function Home() {
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2">
           <div className="md:content-center md:order-1 md:ps-7">
-          <div className="flex items-center space-x-2">
-            <img src="/images/icons/locationGreen.png" alt="Ubicación" className="size-7" />
-            <h3 className="font-bold text-emerald-800 text-lg">Cabañas Frontera de los Andes</h3>
-          </div>
-          <p>Te dejamos un video del recorrido desde San Martin de Los Andes hasta Cabanias Frontera de los Andes</p>
+            <div className="flex items-center space-x-2">
+              <img src="/images/icons/locationGreen.png" alt="Ubicación" className="size-7" />
+              <h3 className="font-bold text-emerald-800 text-lg">Cabañas Frontera de los Andes</h3>
+            </div>
+            <p>Te dejamos un video del recorrido desde San Martin de Los Andes hasta Cabanias Frontera de los Andes</p>
           </div>
           <video controls className="md:h-auto md:w-96 md:order-0">
-            <source src="/video/Ruta.mp4" type="video/mp4"/>
+            <source src="/video/Ruta.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
