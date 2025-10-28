@@ -6,7 +6,7 @@ import CarouselBackground from "@/components/Carousel/carouselBackground";
 export default function Home() {
   return (
     <main className="flex flex-col justify-between">
-      <section className="relative w-full h-screen lg:h-svh pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-screen pb-10 px-5 flex flex-col items-center justify-center overflow-hidden">
         <CarouselBackground />
         <div className="relative z-10 flex flex-col items-center text-center">
           <img
@@ -20,12 +20,12 @@ export default function Home() {
           </h1>
         </div>
           <img
-          className="absolute z-10 bottom-36 animate-bounce" 
+          className="absolute z-10 bottom-10 animate-bounce" 
           src="/images/icons/arrowDown.png" 
           alt="Flecha hacia abajo" 
         />
       </section>
-      <section className="p-5 pt-14 md:px-20 lg:grid lg:grid-cols-2 ">
+      <section className="p-5 pt-16 md:px-20 lg:grid lg:grid-cols-2 lg:gap-2 lg:items-center">
         <div>
           <div>
             <h4 className="text-green-600 font-semibold">Relájate y disfruta</h4>
@@ -70,14 +70,14 @@ export default function Home() {
         </div>
         <div>
           <img
-            className="hidden lg:block rounded-lg shadow-xxl w-full lg:h-1/2 object-cover object-bottom"
+            className="hidden lg:block rounded-lg shadow-xxl w-full h-auto max-h-[500px] object-cover object-bottom"
             src="/images/cabins/Cabaña2Tranquera.jpg"
             alt="Frontera de los Andes"
           />
         </div>
 
       </section>
-      <section className="p-5 pt-20 md:px-20">
+      <section className="p-5 pt-32 md:px-20">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold w-1/2 ">
             Explora Lugares y Actividades

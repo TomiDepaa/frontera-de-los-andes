@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'cabañas-verano': "url('/images/carrouselHome/cabañasVerano.png')",
-        'cabañas-invierno': "url('/images/carrouselHome/cabañasInvierno.png')",
+        'cabanas-verano': "url('/images/carrouselHome/cabanasVerano.png')",
+        'cabanas-invierno': "url('/images/carrouselHome/cabanasInvierno.png')",
         'footer-background': "url('/images/footerBackground.png')",
         'cabins-headCabins': "url('/images/cabins/InfoCabanas.JPG')",
         'whatToDo': "url('/images/places/DSC_0073.JPG')",
