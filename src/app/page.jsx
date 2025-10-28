@@ -78,8 +78,8 @@ export default function Home() {
 
       </section>
       <section className="p-5 pt-32 md:px-20">
-        <div className="space-y-2">
-          <h2 className="text-3xl font-bold w-1/2 ">
+        <div className="space-y-2 lg:text-center">
+          <h2 className="text-3xl font-bold w-1/2 lg:w-auto ">
             Explora Lugares y Actividades
           </h2>
           <p className="font-light text-lg">
@@ -121,9 +121,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="px-5 pt-20 md:px-20">
-        <div className="md:grid md:grid-cols-2">
-          <div className="space-y-2 md:content-center md:pe-7">
+      <section className="px-5 pt-20 md:px-20 ">
+        <div className="md:grid md:grid-cols-2 md:items-center md:gap-6">
+          <div className="space-y-2 md:content-center">
             <h2 className="text-3xl font-bold w-1/2 ">Nuestra Ubicación</h2>
             <p className="font-light">
               Ubicados en Villa Río Hermoso kilometro 2189 de la Ruta Nacional
@@ -137,19 +137,19 @@ export default function Home() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Ubicacion Frontera de los Andes"
-              className="w-full h-52  md:h-56"
+              className="w-full h-56"
             ></iframe>
           </div>
         </div>
-        <div className="space-y-4 md:grid md:grid-cols-2">
-          <div className="md:content-center md:order-1 md:ps-7">
+        <div className="space-y-4 md:grid md:grid-cols-2 md:items-center md:gap-6">
+          <div className="md:content-center md:order-1">
             <div className="flex items-center space-x-2">
               <img src="/images/icons/locationGreen.png" alt="Ubicación" className="size-7" />
               <h3 className="font-bold text-emerald-800 text-lg">Cabañas Frontera de los Andes</h3>
             </div>
             <p>Te dejamos un video del recorrido desde San Martin de Los Andes hasta Cabanias Frontera de los Andes</p>
           </div>
-          <video controls className="md:h-auto md:w-96 md:order-0">
+          <video controls className="md:h-auto md:w-auto md:order-0">
             <source src="/video/Ruta.mp4" type="video/mp4" />
           </video>
         </div>
