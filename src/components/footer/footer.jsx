@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bg-footer-background bg-top bg-cover mt-16 py-12 md:pt-72 lg:pt-96 xl" >
+      <footer className="bg-footer-background bg-top bg-cover mt-16 py-20 md:pt-64 lg:pt-[30rem] xl" >
         <section>
-          <div className="flex space-x-10 justify-center mt-20 md:mt-0 lg:mt-0">
+          <div className="flex space-x-10 justify-center pt-5 mt-20 md:mt-0 lg:mt-0">
             <a
               href="https://www.instagram.com/fronteradelosandes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"

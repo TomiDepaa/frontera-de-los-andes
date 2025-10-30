@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
       <section className="px-5 pt-20 md:px-20 ">
-        <div className="md:grid md:grid-cols-2 md:items-center md:gap-6">
+        <div className="md:grid md:grid-cols-2 md:items-center md:justify-items-center md:gap-6">
           <div className="space-y-2 md:content-center">
             <h2 className="text-3xl font-bold w-1/2 ">Nuestra Ubicación</h2>
             <p className="font-light">
@@ -137,11 +137,11 @@ export default function Home() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Ubicacion Frontera de los Andes"
-              className="w-full h-56"
+              className="w-full h-56 lg:w-[52rem] lg:h-[25rem]"
             ></iframe>
           </div>
         </div>
-        <div className="space-y-4 md:grid md:grid-cols-2 md:items-center md:gap-6">
+        <div className="space-y-4 md:grid md:grid-cols-2 md:items-center md:justify-items-center md:gap-6">
           <div className="md:content-center md:order-1">
             <div className="flex items-center space-x-2">
               <img src="/images/icons/locationGreen.png" alt="Ubicación" className="size-7" />
