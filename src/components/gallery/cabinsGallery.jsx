@@ -49,7 +49,7 @@ export default function CabinsGallery() {
           <img
             src={src}
             alt={`Imagen ${index + 1}`}
-            className="w-full h-44 object-cover rounded-lg shadow-lg hover:opacity-80 cursor-pointer"
+            className="w-full h-44 lg:h-60 object-cover rounded-lg shadow-lg hover:opacity-80 cursor-pointer"
           />
         </a>
       ))}

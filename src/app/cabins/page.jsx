@@ -5,9 +5,9 @@ export default function Cabins() {
   return (
     <>
       <main>
-        <section className="pt-28 w-full relative bg-cabins-headCabins bg-cover bg-center">
+        <section className="pt-28 md:px-20 lg:pt-40 w-full lg:h-[40rem]  lg:px-52 relative bg-cabins-headCabins bg-cover bg-center">
           <div className="absolute inset-0 bg-green-brand/80"></div>
-          <div className="px-5 md:px-32 text-gray-200">
+          <div className="px-5 text-gray-200 ">
             <h1 className="text-4xl font-bold relative">
               Acerca de Nuestras Cabañas
             </h1>
@@ -32,7 +32,7 @@ export default function Cabins() {
             </div>
           </div>
         </section>
-        <section className="px-5 md:px-20 md:py-20 space-y-5 flex flex-col items-center md:grid md:grid-cols-2 md:space-x-5">
+        <section className="px-5 md:px-20 md:py-20 lg:px-52 space-y-5 flex flex-col items-center md:grid md:grid-cols-2 md:space-x-5">
           <div className="pt-10 space-y-3">
             <h1 className="text-3xl font-bold">Info de las Cabañas</h1>
             <p className="text-lg">
@@ -50,7 +50,7 @@ export default function Cabins() {
           />
           </div>
         </section>
-        <section className="px-5 md:px-20 py-10 flex flex-col items-center md:items-stretch">
+        <section className="px-5 md:px-20 lg:px-52 py-10 flex flex-col items-center md:items-stretch">
           <div className="">
             <h2 className="text-3xl font-bold ">
               Servicios con los que contamos
@@ -163,7 +163,7 @@ export default function Cabins() {
             </ul>
           </div>
         </section>
-        <section className="pt-10 md:px-20 px-5 space-y-3 md:space-y-10">
+        <section className="pt-10 md:px-20 lg:px-52 px-5 space-y-3 md:space-y-10">
           <h2 className="text-3xl font-bold">Galeria</h2>
           <CabinsGallery />
         </section>
