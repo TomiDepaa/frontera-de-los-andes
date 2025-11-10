@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "categoria": "Lugar",
+        "nombre": "Lago hermoso",
+        "descripcionCorta": "",
+        "descripcionLarga": "",
+        "imagen": "",
+        "ubicacion": "" 
+    },
+    {
+        "id": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcionCorta": "",
+        "descripcionLarga": "",
+        "imagen": "",
+        "ubicacion": "" 
+    }
+]
