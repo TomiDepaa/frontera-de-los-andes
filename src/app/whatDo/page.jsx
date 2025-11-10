@@ -7,15 +7,23 @@ export default function Activities() {
 
   return (
     <main className="relative">
-      <section className="px-5 md:px-32 pt-32 pb-5 md:pb-20 space-y-2 bg-whatToDo bg-cover bg-center relative">
+      <section className="px-5 md:px-32 pt-32 pb-10 md:pb-24 space-y-4 bg-whatToDo bg-cover bg-center relative">
         <div className="absolute inset-0 bg-green-brand/50"></div>
-        <h1 className="text-3xl text-bg-color font-bold relative md:pt-20">
-          ¿Qué hacer?
-        </h1>
-        <p className="text-bg-color relative">
-          ¿Todavía no sabes qué hacer? Te damos algunas opciones para conocer
-          lugares increíbles y algunas actividades en la zona.
-        </p>
+
+        <div className="relative space-y-3 md:pt-20">
+          <h1 className="text-3xl md:text-5xl text-bg-color font-bold drop-shadow-lg">
+            Descubrí la magia de Patagonia
+          </h1>
+          <p className="text-bg-color text-base md:text-lg max-w-3xl">
+            Desde nuestras cabañas, ubicadas en Villa Río Hermoso —a solo 25 km del centro de San Martín de los Andes—,
+            podés disfrutar de una gran variedad de experiencias al aire libre. Recorré senderos entre bosques nativos,
+            descubrí lagos y ríos de aguas cristalinas, y viví la magia de la Patagonia en cada estación del año.
+          </p>
+          <p className="text-bg-color text-base md:text-lg max-w-2xl italic">
+            Trekkings, kayak, esquí, pesca o simplemente disfrutar un atardecer junto al río...
+            acá siempre hay algo para hacer!
+          </p>
+        </div>
       </section>
       {activeCard !== null && (
         <div
@@ -27,7 +35,7 @@ export default function Activities() {
         <h2 className="text-2xl font-semibold ">
           Lo que no puede faltar en tu estadia
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-4 md:justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center mt-4 md:justify-items-center">
           <CardPlacesAndActivitiesWhatToDo
             img="/images/places/lagoHermoso.jpg"
             alt="Lago hermoso"
