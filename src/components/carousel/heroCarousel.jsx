@@ -29,22 +29,6 @@ export default function HeroCarousel({ interval = 5000 }) {
           }`}
         />
       ))}
-
-      {images.length > 1 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              type="button"
-              aria-label={`Ir a la imagen ${index + 1}`}
-              onClick={() => setCurrent(index)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                index === current ? "w-6 bg-white" : "w-1.5 bg-white/50 hover:bg-white/80"
-              }`}
-            />
-          ))}
-        </div>
-      )}
     </div>
   );
 }

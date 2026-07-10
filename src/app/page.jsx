@@ -2,13 +2,14 @@ import ItemsInfo from "@/components/itemsInfo/itemsInfo";
 import GreenButton from "@/components/buttons/greenButton";
 import CardPlacesAndActivitiesHome from "@/components/cardPlacesAndActivities/cardPlacesAndActivitiesHome";
 import HeroCarousel from "@/components/carousel/heroCarousel";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-between overflow-hidden">
       <section className="relative w-full min-h-[600px] md:min-h-[720px] pt-32 pb-16 px-5 flex flex-col items-center justify-center text-center overflow-hidden">
         <HeroCarousel />
-        <div className="absolute inset-0 bg-green-brand/70"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-[1]">
           <h1 className="text-2xl text-white pb-3">Bienvenidos a</h1>
@@ -21,13 +22,18 @@ export default function Home() {
             Descubre una estadía única en Villa Río Hermoso, San Martín de los
             Andes, donde la naturaleza y la comodidad se encuentran.
           </p>
-          <div className="flex justify-center">
-            <GreenButton text="Conocer Más" path="/cabins" img="/images/icons/arrowRight.png" />
-          </div>
         </div>
+
+        <a
+          href="#descubre"
+          aria-label="Ir a la siguiente sección"
+          className="absolute bottom-16 left-1/2 -translate-x-1/2 z-[1] animate-bounce"
+        >
+          <ChevronDownIcon className="w-8 h-8 text-white/80 hover:text-white transition-colors" />
+        </a>
       </section>
 
-      <section className="p-5 md:px-20 md:py-24">
+      <section id="descubre" className="p-5 md:px-20 md:py-24">
         <div className="max-w-2xl">
           <h4 className="text-green-brand font-semibold">Relájate y disfruta</h4>
           <h2 className="pt-2 text-3xl md:text-4xl font-bold text-ink">
@@ -55,6 +61,9 @@ export default function Home() {
             title="Cocina Equipada"
             paragraph="Electrodomésticos modernos y utensilios de cocina para tu comodidad."
           />
+        </div>
+        <div className="flex justify-center pt-4">
+          <GreenButton text="Conocer Más" path="/cabins" img="/images/icons/arrowRight.png" />
         </div>
       </section>
 
