@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar.jsx";
-import Head from "next/head";
 import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -14,19 +13,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <Head></Head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-bg-color text-ink antialiased`}>
         <Navbar />
-        <div className="fixed right-4 md:right-10 bottom-4 md:bottom-10 z-10" >
+        <div className="fixed right-4 md:right-10 bottom-4 md:bottom-10 z-20">
           <a
             href="https://api.whatsapp.com/send?phone=5492352409793"
             target="_blank"
+            className="block shadow-soft rounded-full transition-transform duration-300 hover:scale-110"
           >
-            <img src="/images/icons/whatsappBubble.png" alt="Whatsapp" className="w-16 md:w-20"/>
+            <img src="/images/icons/whatsappBubble.png" alt="Whatsapp" className="w-14 md:w-16" />
           </a>
         </div>
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
