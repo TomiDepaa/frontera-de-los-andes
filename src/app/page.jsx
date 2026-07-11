@@ -1,8 +1,43 @@
 import ItemsInfo from "@/components/itemsInfo/itemsInfo";
 import GreenButton from "@/components/buttons/greenButton";
-import CardPlacesAndActivitiesHome from "@/components/cardPlacesAndActivities/cardPlacesAndActivitiesHome";
 import HeroCarousel from "@/components/carousel/heroCarousel";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+
+const homeActivities = [
+  {
+    img: "/images/activities/cerroChapelco.jpg",
+    alt: "Cerro Chapelco",
+    title: "Cerro Chapelco",
+    category: "Nieve y montaña",
+    featured: true,
+  },
+  {
+    img: "/images/places/lagoHermoso.jpg",
+    alt: "Lago Hermoso",
+    title: "Lago Hermoso",
+    category: "Naturaleza",
+  },
+  {
+    img: "/images/places/cascadaÑivinco.jpg",
+    alt: "Cascada Ñivinco",
+    title: "Cascada Ñivinco",
+    category: "Trekking",
+  },
+  {
+    img: "/images/activities/pesca.jpg",
+    alt: "Pesca con mosca",
+    title: "Pesca con Mosca",
+    category: "Agua",
+  },
+];
+
+const quickFacts = [
+  { value: "3", label: "Cabañas equipadas", path: "/cabins" },
+  { value: "6", label: "Personas por cabaña", path: "/cabins" },
+  { value: "25 km", label: "Desde San Martín de los Andes", path: "/contact" },
+  { value: "Todo el año", label: "Abiertos en toda temporada", path: "/whatDo" },
+];
 
 export default function Home() {
   return (
@@ -67,6 +102,93 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        className="relative h-[60vh] md:h-[75vh] bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
+        style={{ backgroundImage: "url('/images/cabins/CabanasDesdeCalle.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-green-brand/60"></div>
+        <div className="relative max-w-xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+            Desconectá en el corazón de la Patagonia
+          </h2>
+          <p className="pt-5 text-white/85 text-lg">
+            Cada rincón de Frontera de los Andes está pensado para que
+            disfrutes del entorno sin resignar comodidad.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-5 md:px-20 py-16 md:py-24">
+        <div className="max-w-xl mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-ink">Un vistazo por dentro</h2>
+          <p className="pt-3 text-lg text-muted">
+            Espacios cálidos, luminosos y equipados para que te sientas como en casa.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 md:h-[520px]">
+          <Link
+            href="/cabins"
+            className="relative col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-card group"
+          >
+            <img
+              src="/images/cabins/in/LivingZonaEstar.jpg"
+              alt="Living de la cabaña"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </Link>
+          <Link
+            href="/cabins"
+            className="relative rounded-2xl overflow-hidden shadow-card group"
+          >
+            <img
+              src="/images/cabins/in/CocinaDeFrente.jpg"
+              alt="Cocina equipada"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </Link>
+          <Link
+            href="/cabins"
+            className="relative rounded-2xl overflow-hidden shadow-card group"
+          >
+            <img
+              src="/images/cabins/in/HabitacionDoble.jpg"
+              alt="Habitación matrimonial"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </Link>
+          <Link
+            href="/cabins"
+            className="relative col-span-2 rounded-2xl overflow-hidden shadow-card group"
+          >
+            <img
+              src="/images/cabins/EscaleraParque.jpg"
+              alt="Parque y deck exterior"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </Link>
+        </div>
+        <div className="flex justify-center pt-10">
+          <GreenButton text="Ver Galería Completa" path="/cabins" img="/images/icons/arrowRight.png" />
+        </div>
+      </section>
+
+      <section className="bg-green-brand px-5 md:px-20 py-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
+          {quickFacts.map((fact) => (
+            <Link
+              key={fact.label}
+              href={fact.path}
+              className="group text-center md:text-left"
+            >
+              <h3 className="text-3xl md:text-4xl font-bold text-white">{fact.value}</h3>
+              <p className="pt-1 text-white/70 text-sm group-hover:text-white transition-colors">
+                {fact.label}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="p-5 pt-16 md:px-20 md:pt-24 bg-surface">
         <div className="max-w-xl text-center mx-auto md:mx-0 md:text-left space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold text-ink">
@@ -77,11 +199,56 @@ export default function Home() {
             viaje sea inolvidable.
           </p>
         </div>
-        <div className="grid grid-cols-2 pt-10 md:flex md:justify-center md:flex-wrap">
-          <CardPlacesAndActivitiesHome img="/images/places/lagoHermoso.jpg" alt="Lago hermoso" title="Lago Hermoso" link="/whatDo" />
-          <CardPlacesAndActivitiesHome img="/images/places/cascadaÑivinco.jpg" alt="Cascada Ñivinco" title="Cascada Ñivinco" link="/whatDo" />
-          <CardPlacesAndActivitiesHome img="/images/activities/cerroChapelco.jpg" alt="Cerro Chapelco" title="Cerro Chapelco" link="/whatDo" />
-          <CardPlacesAndActivitiesHome img="/images/activities/pesca.jpg" alt="Pesca con mosca" title="Pesca" link="/whatDo" />
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 pt-10 md:h-[440px]">
+          {homeActivities
+            .filter((activity) => activity.featured)
+            .map((activity) => (
+              <Link
+                key={activity.title}
+                href="/whatDo"
+                className="group relative rounded-2xl overflow-hidden shadow-card aspect-[4/3] md:aspect-auto md:h-full"
+              >
+                <img
+                  src={activity.img}
+                  alt={activity.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-brand/85 via-green-brand/10 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-6">
+                  <span className="inline-block px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs font-semibold mb-2">
+                    {activity.category}
+                  </span>
+                  <h3 className="text-2xl font-bold text-white">{activity.title}</h3>
+                </div>
+              </Link>
+            ))}
+
+          <div className="flex flex-col divide-y divide-white/60 md:justify-center">
+            {homeActivities
+              .filter((activity) => !activity.featured)
+              .map((activity) => (
+                <Link
+                  key={activity.title}
+                  href="/whatDo"
+                  className="group flex items-center gap-4 py-4 first:pt-0 last:pb-0 hover:pl-2 transition-all duration-300"
+                >
+                  <div className="w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden">
+                    <img
+                      src={activity.img}
+                      alt={activity.alt}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold text-green-brand">
+                      {activity.category}
+                    </span>
+                    <h4 className="font-semibold text-ink">{activity.title}</h4>
+                  </div>
+                  <ChevronRightIcon className="w-5 h-5 text-muted ml-auto group-hover:translate-x-1 transition-transform" />
+                </Link>
+              ))}
+          </div>
         </div>
         <div className="flex justify-center pt-10">
           <GreenButton text="Conocer Más" path="/whatDo" img="/images/icons/arrowRight.png" />
