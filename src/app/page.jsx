@@ -7,14 +7,14 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 export default function Home() {
   return (
     <main className="flex flex-col justify-between overflow-hidden">
-      <section className="relative w-full min-h-[600px] md:min-h-[720px] pt-32 pb-16 px-5 flex flex-col items-center justify-center text-center overflow-hidden">
+      <section className="relative w-full min-h-screen px-5 flex flex-col items-center justify-center text-center overflow-hidden">
         <HeroCarousel />
         <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-[1]">
-          <h1 className="text-2xl text-white pb-3">Bienvenidos a</h1>
+          <h1 className="text-2xl font-medium text-white pb-3">Bienvenido a</h1>
           <img
-            className="h-32 md:h-40 mx-auto"
+            className="h-52 lg:h-60 mx-auto"
             src="/images/Frontera_Trans.png"
             alt="Frontera de los Andes"
           />
