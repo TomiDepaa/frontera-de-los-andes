@@ -2,21 +2,21 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const contactMethods = [
   {
-    icon: "/images/icons/whatsapp.png",
+    icon: "/images/icons/whatsappGreen.png",
     title: "WhatsApp",
     description: "Escribinos directo para consultas y reservas.",
     cta: "Enviar mensaje",
     href: "https://api.whatsapp.com/send?phone=5492352409793",
   },
   {
-    icon: "/images/icons/instagram.png",
+    icon: "/images/icons/instagramGreen.png",
     title: "Instagram",
     description: "Mirá fotos, novedades y disponibilidad de las cabañas.",
     cta: "Ver perfil",
     href: "https://www.instagram.com/fronteradelosandes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
-    icon: "/images/icons/ubication.png",
+    icon: "/images/icons/ubicationGreen.png",
     title: "Ubicación",
     description: "Villa Río Hermoso, San Martín de los Andes.",
     cta: "Cómo llegar",
