@@ -22,7 +22,7 @@ export default function Cabins() {
     <main>
       <section className="pt-32 pb-16 w-full relative bg-cabins-headCabins bg-cover bg-center">
         <div className="absolute inset-0 bg-green-brand/80"></div>
-        <div className="relative px-5 md:px-32 text-gray-200">
+        <div className="relative px-5 md:px-32 2xl:px-48 text-gray-200">
           <h1 className="text-4xl font-bold">
             Acerca de Nuestras Cabañas
           </h1>
@@ -48,7 +48,7 @@ export default function Cabins() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0">
+      <section className="px-5 md:px-20 2xl:px-40 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold text-ink">Info de las Cabañas</h2>
           <p className="text-lg text-muted leading-relaxed">
@@ -67,7 +67,7 @@ export default function Cabins() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 py-16 bg-surface">
+      <section className="px-5 md:px-20 2xl:px-40 py-16 bg-surface">
         <h2 className="text-3xl font-bold text-ink mb-10">
           Servicios con los que contamos
         </h2>
@@ -86,7 +86,7 @@ export default function Cabins() {
         </ul>
       </section>
 
-      <section className="pt-16 pb-20 md:px-20 px-5 space-y-6 md:space-y-10">
+      <section className="pt-16 pb-20 md:px-20 2xl:px-40 px-5 space-y-6 md:space-y-10">
         <h2 className="text-3xl font-bold text-ink">Galería</h2>
         <CabinsGallery />
       </section>

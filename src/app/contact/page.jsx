@@ -27,7 +27,7 @@ const contactMethods = [
 export default function Contact() {
   return (
     <main>
-      <section className="pt-32 pb-24 md:pb-32 px-5 md:px-20 bg-green-brand text-center">
+      <section className="pt-32 pb-24 md:pb-32 px-5 md:px-20 2xl:px-40 bg-green-brand text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white">Contactanos</h1>
         <p className="pt-4 text-lg text-white/80 max-w-xl mx-auto">
           Escribinos por WhatsApp, seguinos en Instagram o visitanos en Villa
@@ -35,7 +35,7 @@ export default function Contact() {
         </p>
       </section>
 
-      <section className="px-5 md:px-20 -mt-14 md:-mt-16 relative z-10">
+      <section className="px-5 md:px-20 2xl:px-40 -mt-14 md:-mt-16 relative z-10">
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {contactMethods.map((method) => (
             <a
@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 py-16 md:py-24">
+      <section className="px-5 md:px-20 2xl:px-40 py-16 md:py-24">
         <div className="md:grid md:grid-cols-2 md:gap-10">
           <div className="space-y-3 md:content-center">
             <h2 className="text-3xl md:text-4xl font-bold text-ink">Cómo llegar</h2>

@@ -56,7 +56,7 @@ export default function Activities() {
 
   return (
     <main>
-      <section className="relative pt-32 pb-16 md:pb-24 px-5 md:px-32 bg-whatToDo bg-cover bg-center">
+      <section className="relative pt-32 pb-16 md:pb-24 px-5 md:px-32 2xl:px-48 bg-whatToDo bg-cover bg-center">
         <div className="absolute inset-0 bg-green-brand/70"></div>
         <div className="relative text-gray-100 max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold">¿Qué hacer?</h1>
@@ -78,7 +78,7 @@ export default function Activities() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 pt-10 md:pt-16">
+      <section className="px-5 md:px-20 2xl:px-40 pt-10 md:pt-16">
         <ActivityFilters
           categories={categories}
           active={activeFilter}
@@ -86,7 +86,7 @@ export default function Activities() {
         />
       </section>
 
-      <section className="px-5 md:px-20 py-10 md:py-16 space-y-16 md:space-y-24">
+      <section className="px-5 md:px-20 2xl:px-40 py-10 md:py-16 space-y-16 md:space-y-24">
         {filteredActivities.length > 0 ? (
           filteredActivities.map((activity, index) => (
             <ActivityCard

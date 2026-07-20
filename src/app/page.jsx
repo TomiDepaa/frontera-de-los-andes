@@ -32,13 +32,6 @@ const homeActivities = [
   },
 ];
 
-const quickFacts = [
-  { value: "3", label: "Cabañas equipadas", path: "/cabins" },
-  { value: "6", label: "Personas por cabaña", path: "/cabins" },
-  { value: "25 km", label: "Desde San Martín de los Andes", path: "/contact" },
-  { value: "Todo el año", label: "Abiertos en toda temporada", path: "/whatDo" },
-];
-
 export default function Home() {
   return (
     <main className="flex flex-col justify-between overflow-hidden">
@@ -68,17 +61,26 @@ export default function Home() {
         </a>
       </section>
 
-      <section id="descubre" className="p-5 md:px-20 md:py-24">
-        <div className="max-w-2xl">
-          <h4 className="text-green-brand font-semibold">Relájate y disfruta</h4>
-          <h2 className="pt-2 text-3xl md:text-4xl font-bold text-ink">
-            Escape perfecto en el sur argentino
-          </h2>
-          <p className="pt-4 text-lg text-muted">
-            En Frontera de los Andes te esperan cabañas completamente equipadas
-            en un entorno natural inigualable. Perfecto para familias, parejas,
-            amigos y aventureros.
-          </p>
+      <section id="descubre" className="p-5 md:px-20 md:py-24 2xl:px-40">
+        <div className="grid gap-10 md:grid-cols-2 md:items-center">
+          <div>
+            <h4 className="text-green-brand font-semibold">Relájate y disfruta</h4>
+            <h2 className="pt-2 text-3xl md:text-4xl font-bold text-ink">
+              Escape perfecto en el sur argentino
+            </h2>
+            <p className="pt-4 text-lg text-muted">
+              En Frontera de los Andes te esperan cabañas completamente equipadas
+              en un entorno natural inigualable. Perfecto para familias, parejas,
+              amigos y aventureros.
+            </p>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-card h-72 md:h-[420px]">
+            <img
+              src="/images/cabins/Cabaña1.jpg"
+              alt="Cabaña rodeada de naturaleza"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
         <div className="pt-14 pb-8 grid gap-8 md:grid-cols-3">
           <ItemsInfo
@@ -118,7 +120,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 py-16 md:py-24">
+      <section className="px-5 md:px-20 py-16 md:py-24 2xl:px-40">
         <div className="max-w-xl mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-ink">Un vistazo por dentro</h2>
           <p className="pt-3 text-lg text-muted">
@@ -172,24 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-green-brand px-5 md:px-20 py-14">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
-          {quickFacts.map((fact) => (
-            <Link
-              key={fact.label}
-              href={fact.path}
-              className="group text-center md:text-left"
-            >
-              <h3 className="text-3xl md:text-4xl font-bold text-white">{fact.value}</h3>
-              <p className="pt-1 text-white/70 text-sm group-hover:text-white transition-colors">
-                {fact.label}
-              </p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="p-5 pt-16 md:px-20 md:pt-24 bg-surface">
+      <section className="p-5 pt-16 md:px-20 md:pt-24 2xl:px-40 bg-surface">
         <div className="max-w-xl text-center mx-auto md:mx-0 md:text-left space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold text-ink">
             Explora Lugares y Actividades
@@ -255,7 +240,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 pt-16 pb-16 md:px-20 md:pt-24">
+      <section className="px-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40">
         <div className="md:grid md:grid-cols-2 md:gap-10">
           <div className="space-y-3 md:content-center">
             <h2 className="text-3xl md:text-4xl font-bold text-ink">Nuestra Ubicación</h2>
