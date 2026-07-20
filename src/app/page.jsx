@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       <section
-        className="relative h-[60vh] md:h-[75vh] bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
+        className="relative min-h-screen bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
         style={{ backgroundImage: "url('/images/cabins/CabanasDesdeCalle.jpg')" }}
       >
         <div className="absolute inset-0 bg-green-brand/60"></div>
