@@ -1,0 +1,24 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontera-de-los-andes-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # Monta el código del host para hot-reload al editar archivos.
+      - .:/app
+      # Pero NO pisa node_modules / .next del contenedor con lo del host
+      # (evita el clásico problema de binarios nativos compilados para
+      # otro SO cuando desarrollás en Mac/Windows).
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      # Necesario en muchos setups (Docker Desktop en Mac/Windows, o volúmenes
+      # de red) para que Next detecte los cambios de archivos correctamente.
+      - WATCHPACK_POLLING=true
+    command: npm run dev
+    stdin_open: true
+    tty: true

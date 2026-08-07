@@ -1,4 +1,5 @@
 "use client";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import CabinsGallery from "@/components/gallery/cabinsGallery";
 
 const services = [
@@ -20,35 +21,53 @@ const services = [
 export default function Cabins() {
   return (
     <main>
-      <section className="pt-32 pb-16 w-full relative bg-cabins-headCabins bg-cover bg-center">
-        <div className="absolute inset-0 bg-green-brand/80"></div>
-        <div className="relative px-5 md:px-32 2xl:px-48 text-gray-200">
-          <h1 className="text-4xl font-bold">
+      <section className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col justify-end px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-cabins-headCabins bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-green-brand via-green-brand/55 to-green-brand/10"></div>
+
+        <div className="relative text-gray-100 max-w-2xl">
+          <span className="inline-block px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs font-semibold">
+            Nuestras cabañas
+          </span>
+          <h1 className="pt-4 text-4xl md:text-6xl font-bold leading-tight">
             Acerca de Nuestras Cabañas
           </h1>
-          <p className="pt-3 text-lg font-light max-w-2xl">
-            Disfruta de una estancia única en nuestras acogedoras cabañas en
-            Villa Río Hermoso, San Martin de los Andes, rodeadas de
+          <p className="pt-4 text-lg font-light text-white/85 max-w-xl">
+            Disfrutá de una estancia única en nuestras acogedoras cabañas en
+            Villa Río Hermoso, San Martín de los Andes, rodeadas de
             naturaleza y equipadas con todo el confort para tu descanso.
           </p>
-          <div className="py-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl">
+          <div className="flex flex-wrap gap-x-10 gap-y-4 pt-8 mt-8 border-t border-white/20">
             <div>
-              <h4 className="text-2xl font-extrabold">3</h4>
-              <p className="font-light pt-1">Cabañas disponibles</p>
+              <h4 className="text-3xl font-extrabold">3</h4>
+              <p className="font-light text-sm pt-1 text-white/70">
+                Cabañas disponibles
+              </p>
             </div>
             <div>
-              <h4 className="text-2xl font-extrabold">6 personas</h4>
-              <p className="font-light pt-1">Capacidad máxima por cabaña</p>
+              <h4 className="text-3xl font-extrabold">6</h4>
+              <p className="font-light text-sm pt-1 text-white/70">
+                Personas por cabaña
+              </p>
             </div>
             <div>
-              <h4 className="text-xl font-extrabold">Servicios incluidos</h4>
-              <p className="font-light pt-1">Wi-Fi, calefación, y muchos más</p>
+              <h4 className="text-lg font-bold">Servicios incluidos</h4>
+              <p className="font-light text-sm pt-1 text-white/70">
+                Wi-Fi, calefacción y mucho más
+              </p>
             </div>
           </div>
         </div>
+
+        <a
+          href="#info"
+          aria-label="Ir a la información de las cabañas"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-[1]"
+        >
+          <ChevronDownIcon className="w-7 h-7 text-white/80 hover:text-white transition-colors animate-bounce" />
+        </a>
       </section>
 
-      <section className="px-5 md:px-20 2xl:px-40 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0">
+      <section id="info" className="px-5 md:px-20 2xl:px-40 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold text-ink">Info de las Cabañas</h2>
           <p className="text-lg text-muted leading-relaxed">

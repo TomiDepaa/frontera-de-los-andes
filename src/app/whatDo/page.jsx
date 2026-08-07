@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import ActivityCard from "@/components/cardPlacesAndActivities/activityCard";
 import ActivityFilters from "@/components/cardPlacesAndActivities/activityFilters";
 
@@ -56,29 +57,46 @@ export default function Activities() {
 
   return (
     <main>
-      <section className="relative pt-32 pb-16 md:pb-24 px-5 md:px-32 2xl:px-48 bg-whatToDo bg-cover bg-center">
-        <div className="absolute inset-0 bg-green-brand/70"></div>
+      <section className="relative min-h-[65vh] md:min-h-[80vh] flex flex-col justify-end px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-whatToDo bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-green-brand via-green-brand/55 to-green-brand/10"></div>
+
         <div className="relative text-gray-100 max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold">¿Qué hacer?</h1>
-          <p className="pt-4 text-lg font-light">
+          <span className="inline-block px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs font-semibold">
+            Actividades y puntos de interés
+          </span>
+          <h1 className="pt-4 text-4xl md:text-6xl font-bold leading-tight">
+            ¿Qué hacer en la Patagonia?
+          </h1>
+          <p className="pt-4 text-lg font-light text-white/85 max-w-xl">
             Te damos algunas opciones para conocer lugares increíbles y
-            algunas actividades en la zona, para que tu estadía sea
-            inolvidable.
+            actividades en la zona, para que tu estadía sea inolvidable.
           </p>
-          <div className="flex gap-8 pt-8">
+          <div className="flex gap-10 pt-8 mt-8 border-t border-white/20">
             <div>
-              <h4 className="text-2xl font-extrabold">{activities.length}</h4>
-              <p className="font-light text-sm pt-1">Lugares destacados</p>
+              <h4 className="text-3xl font-extrabold">{activities.length}</h4>
+              <p className="font-light text-sm pt-1 text-white/70">
+                Lugares destacados
+              </p>
             </div>
             <div>
-              <h4 className="text-2xl font-extrabold">Todo el año</h4>
-              <p className="font-light text-sm pt-1">Actividades disponibles</p>
+              <h4 className="text-3xl font-extrabold">Todo el año</h4>
+              <p className="font-light text-sm pt-1 text-white/70">
+                Actividades disponibles
+              </p>
             </div>
           </div>
         </div>
+
+        <a
+          href="#actividades"
+          aria-label="Ir a las actividades"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-[1]"
+        >
+          <ChevronDownIcon className="w-7 h-7 text-white/80 hover:text-white transition-colors animate-bounce" />
+        </a>
       </section>
 
-      <section className="px-5 md:px-20 2xl:px-40 pt-10 md:pt-16">
+      <section id="actividades" className="px-5 md:px-20 2xl:px-40 pt-10 md:pt-16">
         <ActivityFilters
           categories={categories}
           active={activeFilter}

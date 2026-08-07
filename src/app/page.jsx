@@ -55,9 +55,9 @@ export default function Home() {
         <a
           href="#descubre"
           aria-label="Ir a la siguiente sección"
-          className="absolute bottom-16 left-1/2 -translate-x-1/2 z-[1] animate-bounce"
+          className="absolute bottom-16 left-1/2 -translate-x-1/2 z-[1]"
         >
-          <ChevronDownIcon className="w-8 h-8 text-white/80 hover:text-white transition-colors" />
+          <ChevronDownIcon className="w-8 h-8 text-white/80 hover:text-white transition-colors animate-bounce" />
         </a>
       </section>
 
@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       <section
-        className="relative min-h-screen bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
+        className="relative h-[60vh] md:h-[75vh] bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
         style={{ backgroundImage: "url('/images/cabins/CabanasDesdeCalle.jpg')" }}
       >
         <div className="absolute inset-0 bg-green-brand/60"></div>
