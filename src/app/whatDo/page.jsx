@@ -13,6 +13,8 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Ubicado en el KM xxxxx de la Ruta 40, Lago Hermoso es uno de los rincones más tranquilos de la zona. Sus aguas cristalinas y el entorno de bosque nativo lo convierten en el lugar ideal para un picnic, una caminata liviana junto a la costa o simplemente desconectar en familia.",
+    lat: -40.3553838,
+    lng: -71.5219477,
   },
   {
     img: "/images/places/cerroChapelco.jpg",
@@ -22,6 +24,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "Reconocido internacionalmente como centro de esquí, el Cerro Chapelco ofrece pistas para todos los niveles en invierno, y trekking y mountain bike el resto del año. Sus miradores regalan una de las mejores vistas de la cordillera patagónica.",
+    lat: -40.1976935,
+    lng: -71.3189281,
   },
   {
     img: "/images/places/cascadaChachin.jpg",
@@ -31,6 +35,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "Un sendero de bosque milenario conduce hasta este imponente salto de agua. La caminata es apta para toda la familia y es una de las excursiones más elegidas por quienes visitan San Martín de los Andes.",
+    lat: -40.1407478,
+    lng: -71.6712301,
   },
   {
     img: "/images/activities/pesca.jpg",
@@ -40,6 +46,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "Los ríos y lagos de la zona son un destino reconocido por pescadores de todo el mundo. Se pueden contratar guías locales para una jornada de pesca con mosca rodeados de paisajes patagónicos únicos.",
+    lat: -40.1764375,
+    lng: -71.3804375,
   },
 ];
 
