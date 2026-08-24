@@ -61,7 +61,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section id="descubre" className="p-5 md:px-20 md:py-24 2xl:px-40">
+      <section id="descubre" className="p-5 md:px-20 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
             <h4 className="text-green-brand font-semibold">Relájate y disfruta</h4>
@@ -74,7 +74,7 @@ export default function Home() {
               amigos y aventureros.
             </p>
           </div>
-          <div className="relative rounded-2xl overflow-hidden shadow-card h-72 md:h-[420px]">
+          <div className="relative rounded-2xl overflow-hidden shadow-card h-72 md:h-[420px] lg:h-[380px]">
             <img
               src="/images/cabins/Cabaña1.jpg"
               alt="Cabaña rodeada de naturaleza"
@@ -82,7 +82,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="pt-14 pb-8 grid gap-8 md:grid-cols-3">
+        <div className="pt-14 pb-8 lg:pt-10 lg:pb-4 grid gap-8 md:grid-cols-3">
           <ItemsInfo
             img="/images/icons/forest.png"
             title="Entorno Natural"
@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       <section
-        className="relative h-[60vh] md:h-[75vh] bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
+        className="relative h-[60vh] md:h-[75vh] lg:h-screen bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
         style={{ backgroundImage: "url('/images/cabins/CabanasDesdeCalle.jpg')" }}
       >
         <div className="absolute inset-0 bg-green-brand/60"></div>
@@ -120,14 +120,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 md:px-20 py-16 md:py-24 2xl:px-40">
+      <section className="px-5 md:px-20 py-16 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="max-w-xl mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-ink">Un vistazo por dentro</h2>
           <p className="pt-3 text-lg text-muted">
             Espacios cálidos, luminosos y equipados para que te sientas como en casa.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 md:h-[520px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 md:h-[520px] lg:h-[55vh]">
           <Link
             href="/cabins"
             className="relative col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-card group"
@@ -174,7 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-5 pt-16 md:px-20 md:pt-24 2xl:px-40 bg-surface">
+      <section className="p-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40 bg-surface lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="max-w-xl text-center mx-auto md:mx-0 md:text-left space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold text-ink">
             Explora Lugares y Actividades
@@ -184,7 +184,7 @@ export default function Home() {
             viaje sea inolvidable.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-4 md:gap-6 pt-10 md:h-[440px]">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 pt-10 md:h-[440px] lg:h-[50vh]">
           {homeActivities
             .filter((activity) => activity.featured)
             .map((activity) => (
@@ -240,7 +240,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40">
+      <section className="px-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="md:grid md:grid-cols-2 md:gap-10">
           <div className="space-y-3 md:content-center">
             <h2 className="text-3xl md:text-4xl font-bold text-ink">Nuestra Ubicación</h2>

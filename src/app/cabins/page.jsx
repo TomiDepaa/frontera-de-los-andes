@@ -21,7 +21,7 @@ const services = [
 export default function Cabins() {
   return (
     <main>
-      <section className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col justify-end px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-cabins-headCabins bg-cover bg-center">
+      <section className="relative min-h-[60vh] md:min-h-[75vh] lg:min-h-screen flex flex-col justify-end px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-cabins-headCabins bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-t from-green-brand via-green-brand/55 to-green-brand/10"></div>
 
         <div className="relative text-gray-100 max-w-2xl">
@@ -67,7 +67,7 @@ export default function Cabins() {
         </a>
       </section>
 
-      <section id="info" className="px-5 md:px-20 2xl:px-40 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0">
+      <section id="info" className="px-5 md:px-20 2xl:px-40 py-16 md:py-24 space-y-8 flex flex-col items-center md:grid md:grid-cols-2 md:gap-10 md:space-y-0 lg:min-h-screen lg:content-center">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold text-ink">Info de las Cabañas</h2>
           <p className="text-lg text-muted leading-relaxed">
