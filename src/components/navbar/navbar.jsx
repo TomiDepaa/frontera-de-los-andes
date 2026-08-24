@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 right-0 left-0 z-30 px-3 pt-3 md:px-6 md:pt-4">
+      <header className="fixed top-0 right-0 left-0 z-30 px-3 pt-2 md:px-6">
         <nav
           className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-green-brand px-5 py-2.5 shadow-soft"
           aria-label="Global"
