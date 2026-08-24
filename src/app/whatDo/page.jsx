@@ -65,7 +65,7 @@ export default function Activities() {
 
   return (
     <main>
-      <section className="relative min-h-[65vh] md:min-h-[80vh] lg:min-h-screen flex flex-col justify-end px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-whatToDo bg-cover bg-center">
+      <section className="relative min-h-[65vh] md:min-h-[80vh] lg:min-h-screen flex flex-col justify-center pt-24 px-5 md:px-32 2xl:px-48 pb-14 md:pb-20 bg-whatToDo bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-t from-green-brand via-green-brand/55 to-green-brand/10"></div>
 
         <div className="relative text-gray-100 max-w-2xl">
