@@ -170,6 +170,28 @@ const activities = [
     lat: -40.1738,
     lng: -71.4376,
   },
+  {
+    img: "/images/places/cascadaNivinco.jpg",
+    alt: "Cascada Ñivinco",
+    title: "Cascada Ñivinco",
+    category: "Trekking",
+    difficulty: "Fácil",
+    description:
+      "Un sendero corto y accesible para toda la familia, dentro del Parque Nacional Nahuel Huapi, que atraviesa el bosque andino patagónico y cruza el río Ñivinco en varios tramos hasta llegar a una imponente cascada. Ideal como parada en el recorrido de la Ruta de los Siete Lagos.",
+    lat: -40.4876,
+    lng: -71.6637,
+  },
+  {
+    img: "/images/places/lagoHermosoSki.jpg",
+    alt: "Lago Hermoso Ski",
+    title: "Lago Hermoso Ski",
+    category: "Nieve y Montaña",
+    difficulty: "Moderada",
+    description:
+      "El centro de esquí más nuevo de la región, dentro del Parque Nacional Lanín y sobre la Ruta de los Siete Lagos. Con cupo diario limitado, ofrece pistas para todo nivel, esquí nórdico y de travesía, caminatas con raquetas, cabalgatas y paseos en moto de nieve, con vistas privilegiadas de la cordillera.",
+    lat: -40.365,
+    lng: -71.535,
+  },
 ];
 
 export default function Activities() {
