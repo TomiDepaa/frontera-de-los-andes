@@ -12,7 +12,7 @@ module.exports = {
         'cabañas-invierno': "url('/images/carrouselHome/cabañasInvierno.png')",
         'footer-background': "url('/images/footerBackground.png')",
         'cabins-headCabins': "url('/images/cabins/InfoCabanas.JPG')",
-        'whatToDo': "url('/images/places/DSC_0073.JPG')",
+        'whatToDo': "url('/images/activities/kayakLagoHermoso.jpg')",
       },
       colors: {
         "green-brand": "#031e0d",

@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-card h-72 md:h-[420px] lg:h-[380px]">
             <img
-              src="/images/cabins/Cabaña1.jpg"
+              src="/images/cabins/paz.jpg"
               alt="Cabaña rodeada de naturaleza"
               className="w-full h-full object-cover"
             />
