@@ -28,6 +28,9 @@ module.exports = {
         "card-hover": "0 10px 24px rgba(3,30,13,0.10)",
         soft: "0 20px 50px -12px rgba(3,30,13,0.20)",
       },
+      screens: {
+        '3xl': '1600px',
+      },
     },
   },
   plugins: [],

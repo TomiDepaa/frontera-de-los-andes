@@ -1,14 +1,14 @@
 export default function Footer() {
   return (
-    <footer className="relative bg-footer-background bg-top bg-cover mt-16">
-      <div className="absolute inset-0 bg-gradient-to-b from-green-brand/0 via-green-brand/25 to-green-brand"></div>
-      <div className="relative pt-16 pb-10 md:pt-72 lg:pt-[21rem] 2xl:pt-[30rem]">
-        <div className="flex flex-col items-center text-center gap-6 px-5">
+    <footer className="relative bg-footer-background bg-top bg-cover">
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-green-brand/0 via-green-brand/25 to-green-brand"></div> */}
+      <div className="relative pt-80 pb-10 lg:pt-[21rem] 2xl:pt-[25rem] 3xl:pt-[30rem]">
+        <div className="flex flex-col items-center text-center px-5">
           {/* <img src="/images/Frontera_Trans.png" alt="Frontera de Los Andes" className="h-14 opacity-95" /> */}
           <p className="text-white-brand/70 text-sm max-w-md">
             Villa Río Hermoso, San Martín de los Andes — Patagonia Argentina
           </p>
-          <div className="flex gap-5">
+          <div className="flex gap-5 py-5">
             <a
               href="https://www.instagram.com/fronteradelosandes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
@@ -31,7 +31,10 @@ export default function Footer() {
               <img src="/images/icons/ubication.png" alt="Ubicación" className="w-5 h-5" />
             </a>
           </div>
-          <p className="text-white-brand/40 text-xs pt-4 pb-2">
+          <p className="text-white-brand/40 text-xs italic pt-4">
+            by <a className="not-italic text-white-brand/60 font-medium"> Tomas De Paulo </a>
+          </p>
+          <p className="text-white-brand/40 text-xs pb-2">
             © {new Date().getFullYear()} Frontera de Los Andes
           </p>
         </div>
