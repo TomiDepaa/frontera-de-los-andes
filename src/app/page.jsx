@@ -105,8 +105,8 @@ export default function Home() {
       </section>
 
       <section
-        className="relative h-[60vh] md:h-[75vh] lg:h-screen bg-fixed bg-cover bg-center flex items-center justify-center text-center px-5"
-        style={{ backgroundImage: "url('/images/cabins/CabanasDesdeCalle.jpg')" }}
+        className="relative h-[60vh] md:h-[75vh] lg:h-screen bg-fixed bg-cover bg-bottom flex items-center justify-center text-center px-5"
+        style={{ backgroundImage: "url('/images/cabins/20240219_182200.jpg')" }}
       >
         <div className="absolute inset-0 bg-green-brand/60"></div>
         <div className="relative max-w-xl">

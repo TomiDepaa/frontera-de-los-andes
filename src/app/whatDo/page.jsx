@@ -49,6 +49,127 @@ const activities = [
     lat: -40.1764375,
     lng: -71.3804375,
   },
+  {
+    img: "/images/places/lagoLacar.jpg",
+    alt: "Lago Lácar",
+    title: "Lago Lácar",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "El gran lago de San Martín de los Andes, con aguas de tonos que van del azul intenso al verde esmeralda. Sus costas ofrecen playas como Catritre y Quila Quina, paseos en lancha, kayak y miradores con vistas panorámicas de la ciudad.",
+    lat: -40.1606,
+    lng: -71.3584,
+  },
+  {
+    img: "/images/places/lagoMachonico.jpg",
+    alt: "Lago Machónico",
+    title: "Lago Machónico",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "El primero de los siete lagos que se encuentran a la vera de la mítica Ruta de los Siete Lagos. Sus aguas calmas y de un azul profundo se contemplan desde un amplio mirador sobre la ruta, ideal para una parada fotográfica en el camino.",
+    lat: -40.33255,
+    lng: -71.42092,
+  },
+  {
+    img: "/images/places/lagoMeliquina.jpg",
+    alt: "Lago Meliquina",
+    title: "Lago Meliquina",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Rodeado de bosques andinopatagónicos de lengas y coihues, el Lago Meliquina ocupa un amplio valle perpendicular a la cordillera. Su costa este alberga la pintoresca Villa Meliquina, punto de partida para varias excursiones de la zona.",
+    lat: -40.3667,
+    lng: -71.3,
+  },
+  {
+    img: "/images/places/lagoFalkner.jpg",
+    alt: "Lago Falkner",
+    title: "Lago Falkner",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Uno de los lagos más bonitos de la Ruta de los Siete Lagos, protegido del viento y con enormes playas de arena ideales para el descanso. Un clásico infaltable para quienes recorren el camino hacia Villa La Angostura.",
+    lat: -40.4667,
+    lng: -71.5,
+  },
+  {
+    img: "/images/places/lagoVillarino.jpg",
+    alt: "Lago Villarino",
+    title: "Lago Villarino",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Vecino del Lago Falkner y parte del recorrido de los Siete Lagos, el Villarino se destaca por sus aguas tranquilas rodeadas de bosque nativo. Un excelente punto para detenerse a disfrutar del paisaje cordillerano.",
+    lat: -40.44312,
+    lng: -71.5833,
+  },
+  {
+    img: "/images/places/lagoFiloHuaHum.jpg",
+    alt: "Lago Filo Hua Hum",
+    title: "Lago Filo Hua Hum",
+    category: "Lagos",
+    difficulty: "Moderada",
+    description:
+      "Dentro del Parque Nacional Lanín y cercano a Villa Meliquina, este lago es uno de los preferidos por los pescadores que buscan truchas arcoíris y fontinalis. Cuenta con un camping y un pequeño refugio junto a la costa.",
+    lat: -40.4961,
+    lng: -71.3047,
+  },
+  {
+    img: "/images/places/rioCaleufu.jpg",
+    alt: "Río Caleufú - Pozones de Caleufú",
+    title: "Río Caleufú (Pozones de Caleufú)",
+    category: "Ríos",
+    difficulty: "Moderada",
+    description:
+      "El Río Caleufú nace de la unión de los ríos Filo Hua Hum y Meliquina, y en uno de sus tramos el agua fue erosionando las piedras dando lugar a pozones profundos de un turquesa intenso. Ideal para trekking, mountain bike y una pausa refrescante en verano. El acceso es por camino de ripio y no está señalizado, así que conviene ir con el recorrido descargado.",
+    lat: -40.4975,
+    lng: -71.2039,
+  },
+  {
+    img: "/images/places/casaDePiedra.jpg",
+    alt: "Casa de Piedra",
+    title: "Casa de Piedra",
+    category: "Trekking",
+    difficulty: "Fácil",
+    description:
+      "Sobre la Ruta Provincial 63, camino a Villa Meliquina, una cueva habitada antiguamente por los pueblos originarios que aún conserva vestigios de arte rupestre. Frente a ella hay un mirador natural con vista al valle del Caleufú. Se recomienda llevar linterna para explorar su interior.",
+    lat: -40.4805,
+    lng: -71.2109,
+  },
+  {
+    img: "/images/places/villaMeliquina.jpg",
+    alt: "Villa Meliquina",
+    title: "Villa Meliquina",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Una pequeña aldea de montaña a orillas del Lago Meliquina, sin red eléctrica y abastecida por energía solar y eólica. Es la puerta de entrada a excursiones como el Lago Filo Hua Hum, Casa de Piedra y los Pozones de Caleufú.",
+    lat: -40.38375,
+    lng: -71.25034,
+  },
+  {
+    img: "/images/places/playaYuco.jpg",
+    alt: "Playa de Yuco",
+    title: "Playa de Yuco",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Conocida como la playa 'caribeña' de la Patagonia por el color turquesa de sus aguas, Yuco reúne cinco playas conectadas por senderos dentro del Parque Nacional Lanín, sobre la margen norte del Lago Lácar. Cuenta con áreas de picnic y senderos de trekking de baja dificultad.",
+    lat: -40.16522,
+    lng: -71.52661,
+  },
+  {
+    img: "/images/places/quilaQuina.jpg",
+    alt: "Quila Quina",
+    title: "Quila Quina",
+    category: "Lagos",
+    difficulty: "Fácil",
+    description:
+      "Villa veraniega sobre la costa sur del Lago Lácar, con playas de arena, una cascada, una fuente de agua mineral y pinturas rupestres de la comunidad mapuche Curruhuinca. Se accede en auto por camino de montaña o en excursión en lancha desde San Martín de los Andes.",
+    lat: -40.1738,
+    lng: -71.4376,
+  },
 ];
 
 export default function Activities() {
