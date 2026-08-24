@@ -40,7 +40,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-[1]">
-          <h1 className="text-2xl font-medium text-white pb-3">Bienvenido a</h1>
+          {/* <h1 className="text-2xl font-medium text-white pb-3">Bienvenido a</h1> */}
           <img
             className="h-52 lg:h-60 mx-auto"
             src="/images/Frontera_Trans.png"
@@ -64,8 +64,8 @@ export default function Home() {
       <section id="descubre" className="p-5 md:px-20 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <h4 className="text-green-brand font-semibold">Relájate y disfruta</h4>
-            <h2 className="pt-2 text-3xl md:text-4xl font-bold text-ink">
+            <h4 className="text-green-800 font-semibold">Relájate y disfruta</h4>
+            <h2 className="pt-1 text-3xl md:text-4xl font-bold text-ink">
               Escape perfecto en el sur argentino
             </h2>
             <p className="pt-4 text-lg text-muted">
@@ -122,6 +122,7 @@ export default function Home() {
 
       <section className="px-5 md:px-20 py-16 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="max-w-xl mb-10">
+          <h4 className="text-green-800 font-semibold">Conoce las cabañas</h4>
           <h2 className="text-3xl md:text-4xl font-bold text-ink">Un vistazo por dentro</h2>
           <p className="pt-3 text-lg text-muted">
             Espacios cálidos, luminosos y equipados para que te sientas como en casa.
@@ -176,6 +177,7 @@ export default function Home() {
 
       <section className="p-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40 bg-surface lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="max-w-xl text-center mx-auto md:mx-0 md:text-left space-y-2">
+          <h4 className="text-green-800 font-semibold">¿Qué hacer?</h4>
           <h2 className="text-3xl md:text-4xl font-bold text-ink">
             Explora Lugares y Actividades
           </h2>
