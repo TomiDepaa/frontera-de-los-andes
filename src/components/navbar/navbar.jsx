@@ -1,128 +1,99 @@
 'use client'
-import { Fragment, useState } from 'react'
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-  Transition,
-} from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const placesActivities = [
-  { name: 'Puntos de interes', href: '/whatDo'},
-  { name: 'Actividades', href: '/whatDo'}
+const navLinks = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Cabañas', href: '/cabins' },
+  { name: 'Actividades y Puntos de Interés', href: '/whatDo' },
+  { name: 'Contacto', href: '/contact' },
 ]
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
-export default function Example() {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isActive = (href) => pathname === href
 
   return (
-    <header className="bg-green-brand m-3 rounded-full fixed top-0 right-0 left-0 z-10">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between py-3 px-5 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+    <>
+      <header className="fixed top-0 right-0 left-0 z-30 px-3 pt-2 md:px-6">
+        <nav
+          className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-green-brand px-5 py-2.5 shadow-soft"
+          aria-label="Global"
+        >
+          <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <span className="sr-only">Frontera de Los Andes</span>
-            <img className="h-14 w-auto" src="/images/Frontera_Trans.png" alt="Logo Frontera de Los Anes" />
+            <img className="h-12 w-auto" src="/images/Frontera_Trans.png" alt="Logo Frontera de Los Andes" />
           </a>
-        </div>
-        <div className="flex lg:hidden">
+
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+            className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-full p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-10 w-10" aria-hidden="true" />
+            <span className="sr-only">Abrir menú</span>
+            <Bars3Icon className="h-7 w-7" aria-hidden="true" />
           </button>
-        </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          
 
-          <a href="/" className="text-sm p-1 rounded-lg font-semibold leading-6 text-white hover:bg-emerald-900">
-            Inicio
-          </a>
-          <a href="/cabins" className="text-sm p-1 rounded-lg font-semibold leading-6 text-white hover:bg-emerald-900">
-            Cabañas
-          </a>
-          <a href="/whatDo" className="text-sm p-1 rounded-lg font-semibold leading-6 text-white hover:bg-emerald-900">
-            Actividades y Puntos de Interes
-          </a>
-          <a href="/contact" className="text-sm p-1 rounded-lg font-semibold leading-6 text-white hover:bg-emerald-900 ">
-            Contacto
-          </a>
-        </PopoverGroup>
-      </nav>
+          <div className="hidden lg:flex lg:gap-x-2">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                aria-current={isActive(link.href) ? 'page' : undefined}
+                className={`px-4 py-2 rounded-full text-sm font-semibold leading-6 transition-colors duration-200 ${
+                  isActive(link.href)
+                    ? 'bg-white/15 text-white'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </header>
+
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-green-brand px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-30 bg-black/30 backdrop-blur-[2px]" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-30 w-4/5 max-w-xs overflow-y-auto bg-green-brand/95 backdrop-blur-md shadow-soft px-6 py-6">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Frontera de Los Andes</span>
-              <img
-                className="h-8 w-auto"
-                src="/images/Frontera_Trans.png"
-                alt="Logo Frontera de Los Andes"
-              />
+              <img className="h-9 w-auto" src="/images/Frontera_Trans.png" alt="Logo Frontera de Los Andes" />
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-white"
+              className="-m-2.5 rounded-full p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">Cerrar menú</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <a
-                  href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-emerald-900"
-                >
-                  Inicio
-                </a>
-                <a
-                  href="/cabins"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-emerald-900"
-                >
-                  Cabañas
-                </a>
-                <a
-                  href="/whatDo"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-emerald-900"
-                >
-                  Actividades y Puntos de Interes
-                </a>
-                <a
-                  href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-emerald-900"
-                >
-                  Contacto
-                </a>
-              </div>
-            </div>
+          <div className="mt-10 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                aria-current={isActive(link.href) ? 'page' : undefined}
+                className={`flex items-center gap-2 rounded-xl px-3 py-3 text-base font-semibold transition-colors ${
+                  isActive(link.href)
+                    ? 'bg-white/15 text-white'
+                    : 'text-white/90 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                {isActive(link.href) && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0" />
+                )}
+                {link.name}
+              </a>
+            ))}
           </div>
         </DialogPanel>
       </Dialog>
-    </header>
+    </>
   )
 }

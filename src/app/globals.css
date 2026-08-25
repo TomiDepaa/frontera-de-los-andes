@@ -5,11 +5,16 @@
 html {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
+
 body {
   padding: 0;
   margin: 0;
   background-color: #fdfefe;
 }
 
-
+::selection {
+  background-color: #031e0d;
+  color: #fffbf5;
+}

@@ -11,27 +11,29 @@ export default function CardPlacesAndActivitiesWhatToDo({
   return (
     <>
       <div
-        className={`relative flex flex-col items-center h-52 md:w-48 m-2 py-4 space-y-8 border rounded-lg shadow-lg  cursor-pointer transition-transform duration-300 hover:scale-105 ${
+        className={`group relative flex flex-col items-center text-center h-52 md:w-48 m-2 py-6 px-3 space-y-5 bg-white border border-surface rounded-2xl shadow-card cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover ${
           isActive ? "hidden" : ""
         }`}
         onClick={onClick}
       >
-        <img
-          src={img}
-          alt={alt}
-          className="rounded-full w-24 h-24 object-cover transition-all duration-300"
-        />
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <div className="rounded-full w-20 h-20 overflow-hidden bg-whitegreen-light ring-2 ring-transparent group-hover:ring-green-brand/30 transition-all duration-300">
+          <img
+            src={img}
+            alt={alt}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="text-base font-semibold text-ink">{title}</h3>
       </div>
 
       {isActive && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="relative bg-white p-8 w-96 md:w-3/5 rounded-lg shadow-2xl z-50">
+        <div className="fixed inset-0 flex items-center justify-center z-50 px-4">
+          <div className="relative bg-white p-6 md:p-8 w-full max-w-lg rounded-2xl shadow-soft z-50">
             <button
-              className="absolute top-2 right-2 text-2xl font-bold text-gray-600 hover:text-gray-900"
+              className="absolute top-3 right-3 flex items-center justify-center w-8 h-8 rounded-full bg-surface text-ink hover:bg-green-brand hover:text-white transition-colors duration-200"
               onClick={(e) => {
                 e.stopPropagation();
-                onClick(null); 
+                onClick(null);
               }}
             >
               ✕
@@ -40,10 +42,10 @@ export default function CardPlacesAndActivitiesWhatToDo({
             <img
               src={img}
               alt={alt}
-              className="rounded-lg w-full h-56 md:h-80 object-cover mb-4"
+              className="rounded-xl w-full h-56 md:h-72 object-cover mb-5"
             />
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="mt-2">{description}</p>
+            <h3 className="text-xl font-semibold text-ink">{title}</h3>
+            <p className="mt-2 text-muted leading-relaxed">{description}</p>
           </div>
         </div>
       )}
