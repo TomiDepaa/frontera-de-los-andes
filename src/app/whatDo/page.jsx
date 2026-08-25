@@ -13,19 +13,19 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Ubicado en el KM xxxxx de la Ruta 40, Lago Hermoso es uno de los rincones más tranquilos de la zona. Sus aguas cristalinas y el entorno de bosque nativo lo convierten en el lugar ideal para un picnic, una caminata liviana junto a la costa o simplemente desconectar en familia.",
-    lat: -40.3553838,
-    lng: -71.5219477,
+    lat: -40.3606544,
+    lng: -71.4768227,
   },
   {
-    img: "/images/places/cerroChapelco.jpg",
+    img: "/images/activities/cerroChapelco.jpg",
     alt: "Cerro Chapelco",
     title: "Cerro Chapelco",
     category: "Nieve y Montaña",
     difficulty: "Moderada",
     description:
       "Reconocido internacionalmente como centro de esquí, el Cerro Chapelco ofrece pistas para todos los niveles en invierno, y trekking y mountain bike el resto del año. Sus miradores regalan una de las mejores vistas de la cordillera patagónica.",
-    lat: -40.1976935,
-    lng: -71.3189281,
+    lat: -40.1978326,
+    lng: -71.3195105,
   },
   {
     img: "/images/places/cascadaChachin.jpg",
@@ -68,8 +68,8 @@ const activities = [
     difficulty: "Fácil",
     description:
       "El primero de los siete lagos que se encuentran a la vera de la mítica Ruta de los Siete Lagos. Sus aguas calmas y de un azul profundo se contemplan desde un amplio mirador sobre la ruta, ideal para una parada fotográfica en el camino.",
-    lat: -40.33255,
-    lng: -71.42092,
+    lat: -40.32879492003899,
+    lng: -71.412882210394,
   },
   {
     img: "/images/places/lagoMeliquina.jpg",
@@ -79,8 +79,8 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Rodeado de bosques andinopatagónicos de lengas y coihues, el Lago Meliquina ocupa un amplio valle perpendicular a la cordillera. Su costa este alberga la pintoresca Villa Meliquina, punto de partida para varias excursiones de la zona.",
-    lat: -40.3667,
-    lng: -71.3,
+    lat: -40.34250340130558,
+    lng: -71.34068046013275,
   },
   {
     img: "/images/places/lagoFalkner.jpg",
@@ -90,19 +90,19 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Uno de los lagos más bonitos de la Ruta de los Siete Lagos, protegido del viento y con enormes playas de arena ideales para el descanso. Un clásico infaltable para quienes recorren el camino hacia Villa La Angostura.",
-    lat: -40.4667,
-    lng: -71.5,
+    lat: -40.442642724737425,
+    lng: -71.53919933060652,
   },
   {
-    img: "/images/places/lagoVillarino.jpg",
+    img: "/images/places/lagoVillarino.jpeg",
     alt: "Lago Villarino",
     title: "Lago Villarino",
     category: "Lagos",
     difficulty: "Fácil",
     description:
       "Vecino del Lago Falkner y parte del recorrido de los Siete Lagos, el Villarino se destaca por sus aguas tranquilas rodeadas de bosque nativo. Un excelente punto para detenerse a disfrutar del paisaje cordillerano.",
-    lat: -40.44312,
-    lng: -71.5833,
+    lat: -40.45134440782516,
+    lng: -71.57273371682767,
   },
   {
     img: "/images/places/lagoFiloHuaHum.jpg",
@@ -112,8 +112,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "Dentro del Parque Nacional Lanín y cercano a Villa Meliquina, este lago es uno de los preferidos por los pescadores que buscan truchas arcoíris y fontinalis. Cuenta con un camping y un pequeño refugio junto a la costa.",
-    lat: -40.4961,
-    lng: -71.3047,
+    lat: -40.498485110348355,
+    lng: -71.30032202178437,
   },
   {
     img: "/images/places/rioCaleufu.jpg",
@@ -123,19 +123,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "El Río Caleufú nace de la unión de los ríos Filo Hua Hum y Meliquina, y en uno de sus tramos el agua fue erosionando las piedras dando lugar a pozones profundos de un turquesa intenso. Ideal para trekking, mountain bike y una pausa refrescante en verano. El acceso es por camino de ripio y no está señalizado, así que conviene ir con el recorrido descargado.",
-    lat: -40.4975,
-    lng: -71.2039,
-  },
-  {
-    img: "/images/places/casaDePiedra.jpg",
-    alt: "Casa de Piedra",
-    title: "Casa de Piedra",
-    category: "Trekking",
-    difficulty: "Fácil",
-    description:
-      "Sobre la Ruta Provincial 63, camino a Villa Meliquina, una cueva habitada antiguamente por los pueblos originarios que aún conserva vestigios de arte rupestre. Frente a ella hay un mirador natural con vista al valle del Caleufú. Se recomienda llevar linterna para explorar su interior.",
-    lat: -40.4805,
-    lng: -71.2109,
+    lat: -40.49330164954184,
+    lng: -71.21245188577504,
   },
   {
     img: "/images/places/villaMeliquina.jpg",
@@ -145,8 +134,8 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Una pequeña aldea de montaña a orillas del Lago Meliquina, sin red eléctrica y abastecida por energía solar y eólica. Es la puerta de entrada a excursiones como el Lago Filo Hua Hum, Casa de Piedra y los Pozones de Caleufú.",
-    lat: -40.38375,
-    lng: -71.25034,
+    lat: -40.382526223122824,
+    lng: -71.2583359097525,
   },
   {
     img: "/images/places/playaYuco.jpg",
@@ -167,8 +156,8 @@ const activities = [
     difficulty: "Fácil",
     description:
       "Villa veraniega sobre la costa sur del Lago Lácar, con playas de arena, una cascada, una fuente de agua mineral y pinturas rupestres de la comunidad mapuche Curruhuinca. Se accede en auto por camino de montaña o en excursión en lancha desde San Martín de los Andes.",
-    lat: -40.1738,
-    lng: -71.4376,
+    lat: -40.17038922038547,
+    lng: -71.44124963489081,
   },
   {
     img: "/images/places/cascadaNivinco.jpg",
@@ -189,8 +178,8 @@ const activities = [
     difficulty: "Moderada",
     description:
       "El centro de esquí más nuevo de la región, dentro del Parque Nacional Lanín y sobre la Ruta de los Siete Lagos. Con cupo diario limitado, ofrece pistas para todo nivel, esquí nórdico y de travesía, caminatas con raquetas, cabalgatas y paseos en moto de nieve, con vistas privilegiadas de la cordillera.",
-    lat: -40.365,
-    lng: -71.535,
+    lat: -40.357031436347,
+    lng: -71.44975539696829,
   },
 ];
 

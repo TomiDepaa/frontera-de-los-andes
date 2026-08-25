@@ -1,8 +1,8 @@
 import { MapPinIcon } from "@heroicons/react/24/outline";
 
 // Ubicación de Cabañas Frontera de los Andes (Villa Río Hermoso, Ruta 40 km 2189)
-const CABIN_LAT = -40.31097227145669;
-const CABIN_LNG = -71.38258652341736;
+const CABIN_LAT = -40.31080118015588;
+const CABIN_LNG = -71.38004086314913;
 
 export default function ActivityCard({
   img,
