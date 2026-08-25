@@ -1,5 +1,14 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "Contacto",
+  description:
+    "Contactanos por WhatsApp o Instagram, o visitanos en Villa Río Hermoso, San Martín de los Andes. Sin motor de reservas: coordinamos tu estadía directamente.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 const contactMethods = [
   {
     icon: "/images/icons/whatsappGreen.png",

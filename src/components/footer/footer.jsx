@@ -12,6 +12,7 @@ export default function Footer() {
             <a
               href="https://www.instagram.com/fronteradelosandes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
             >
               <img src="/images/icons/instagram.png" alt="Instagram" className="w-5 h-5" />
@@ -19,6 +20,7 @@ export default function Footer() {
             <a
               href="https://api.whatsapp.com/send?phone=5492352409793"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
             >
               <img src="/images/icons/whatsapp.png" alt="Whatsapp" className="w-5 h-5" />
@@ -26,6 +28,7 @@ export default function Footer() {
             <a
               href="https://maps.app.goo.gl/dhSFBHx3MKtksAqs6"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
             >
               <img src="/images/icons/ubication.png" alt="Ubicación" className="w-5 h-5" />

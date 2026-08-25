@@ -40,7 +40,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-[1]">
-          {/* <h1 className="text-2xl font-medium text-white pb-3">Bienvenido a</h1> */}
+          <h1 className="sr-only">
+            Frontera de los Andes — Cabañas en Villa Río Hermoso, San Martín de los Andes
+          </h1>
           <img
             className="h-52 lg:h-60 mx-auto"
             src="/images/Frontera_Trans.png"
