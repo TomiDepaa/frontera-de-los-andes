@@ -99,7 +99,7 @@ export default function Cabins() {
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-whitegreen-light flex items-center justify-center">
                 <img src={`/images/icons/${service.icon}.png`} alt="" className="size-5" />
               </div>
-              <span className="font-medium text-sm text-ink">{service.label}</span>
+              <span className="min-w-0 flex-1 font-medium text-sm text-ink break-words">{service.label}</span>
             </li>
           ))}
         </ul>

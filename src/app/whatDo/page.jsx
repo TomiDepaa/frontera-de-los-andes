@@ -12,7 +12,7 @@ const activities = [
     category: "Lagos",
     difficulty: "Fácil",
     description:
-      "Ubicado en el KM xxxxx de la Ruta 40, Lago Hermoso es uno de los rincones más tranquilos de la zona. Sus aguas cristalinas y el entorno de bosque nativo lo convierten en el lugar ideal para un picnic, una caminata liviana junto a la costa o simplemente desconectar en familia.",
+      "Dentro del Parque Nacional Lanín, a 25 km de San Martín de los Andes y muy cerca de Villa Río Hermoso, este lago de origen glaciario es uno de los rincones más tranquilos de la Ruta de los Siete Lagos. Sus aguas cristalinas y el bosque de lengas y coihues que lo rodea lo convierten en el lugar ideal para acampar, pescar, remar en kayak o simplemente relajarse en sus playas de arena fina y canto rodado.",
     lat: -40.3606544,
     lng: -71.4768227,
   },
