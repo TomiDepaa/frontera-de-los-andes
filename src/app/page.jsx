@@ -41,7 +41,8 @@ export default function Home() {
 
         <div className="relative z-[1]">
           <h1 className="sr-only">
-            Frontera de los Andes — Cabañas en Villa Río Hermoso, San Martín de los Andes
+            Frontera de los Andes — Cabañas en Villa Río Hermoso, San Martín de
+            los Andes
           </h1>
           <img
             className="h-52 lg:h-60 mx-auto"
@@ -63,17 +64,22 @@ export default function Home() {
         </a>
       </section>
 
-      <section id="descubre" className="p-5 md:px-20 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
+      <section
+        id="descubre"
+        className="p-5 md:px-20 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center"
+      >
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <h4 className="text-green-800 font-semibold">Relájate y disfruta</h4>
+            <h4 className="text-green-800 font-semibold">
+              Relájate y disfruta
+            </h4>
             <h2 className="pt-1 text-3xl md:text-4xl font-bold text-ink">
               Escape perfecto en el sur argentino
             </h2>
             <p className="pt-4 text-lg text-muted">
-              En Frontera de los Andes te esperan cabañas completamente equipadas
-              en un entorno natural inigualable. Perfecto para familias, parejas,
-              amigos y aventureros.
+              En Frontera de los Andes te esperan cabañas completamente
+              equipadas en un entorno natural inigualable. Perfecto para
+              familias, parejas, amigos y aventureros.
             </p>
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-card h-72 md:h-[420px] lg:h-[380px]">
@@ -102,7 +108,11 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center pt-4">
-          <GreenButton text="Conocer Más" path="/cabins" img="/images/icons/arrowRight.png" />
+          <GreenButton
+            text="Conocer Más"
+            path="/cabins"
+            img="/images/icons/arrowRight.png"
+          />
         </div>
       </section>
 
@@ -116,8 +126,8 @@ export default function Home() {
             Desconectá en el corazón de la Patagonia
           </h2>
           <p className="pt-5 text-white/85 text-lg">
-            Cada rincón de Frontera de los Andes está pensado para que
-            disfrutes del entorno sin resignar comodidad.
+            Cada rincón de Frontera de los Andes está pensado para que disfrutes
+            del entorno sin resignar comodidad.
           </p>
         </div>
       </section>
@@ -125,9 +135,12 @@ export default function Home() {
       <section className="px-5 md:px-20 py-16 md:py-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="max-w-xl mb-10">
           <h4 className="text-green-800 font-semibold">Conoce las cabañas</h4>
-          <h2 className="text-3xl md:text-4xl font-bold text-ink">Un vistazo por dentro</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-ink">
+            Un vistazo por dentro
+          </h2>
           <p className="pt-3 text-lg text-muted">
-            Espacios cálidos, luminosos y equipados para que te sientas como en casa.
+            Espacios cálidos, luminosos y equipados para que te sientas como en
+            casa.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 md:h-[520px] lg:h-[55vh]">
@@ -173,7 +186,11 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex justify-center pt-10">
-          <GreenButton text="Ver Galería Completa" path="/cabins" img="/images/icons/arrowRight.png" />
+          <GreenButton
+            text="Ver Galería Completa"
+            path="/cabins"
+            img="/images/icons/arrowRight.png"
+          />
         </div>
       </section>
 
@@ -207,7 +224,9 @@ export default function Home() {
                   <span className="inline-block px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs font-semibold mb-2">
                     {activity.category}
                   </span>
-                  <h3 className="text-2xl font-bold text-white">{activity.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">
+                    {activity.title}
+                  </h3>
                 </div>
               </Link>
             ))}
@@ -240,14 +259,20 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center pt-10">
-          <GreenButton text="Conocer Más" path="/whatDo" img="/images/icons/arrowRight.png" />
+          <GreenButton
+            text="Conocer Más"
+            path="/whatDo"
+            img="/images/icons/arrowRight.png"
+          />
         </div>
       </section>
 
       <section className="px-5 pt-16 pb-16 md:px-20 md:pt-24 2xl:px-40 lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
         <div className="md:grid md:grid-cols-2 md:gap-10">
           <div className="space-y-3 md:content-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-ink">Nuestra Ubicación</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-ink">
+              Nuestra Ubicación
+            </h2>
             <p className="font-light text-muted">
               Ubicados en Villa Río Hermoso kilómetro 2189 de la Ruta Nacional
               40, a 25 km del centro San Martín de los Andes, nuestro complejo
@@ -267,13 +292,29 @@ export default function Home() {
         <div className="pt-10 space-y-4 md:grid md:grid-cols-2 md:gap-10 md:pt-16">
           <div className="md:content-center md:order-1">
             <div className="flex items-center space-x-2">
-              <img src="/images/icons/locationGreen.png" alt="Ubicación" className="size-6" />
-              <h3 className="font-semibold text-lg text-ink">Cabañas Frontera de los Andes</h3>
+              <img
+                src="/images/icons/locationGreen.png"
+                alt="Ubicación"
+                className="size-6"
+              />
+              <h3 className="font-semibold text-lg text-ink">
+                Cabañas Frontera de los Andes
+              </h3>
             </div>
             <p className="pt-2 text-muted">
-              Te dejamos un video del recorrido desde San Martín de Los Andes hasta Cabañas Frontera de los Andes.
+              Te dejamos un video del recorrido desde San Martín de Los Andes
+              hasta Cabañas Frontera de los Andes.
             </p>
           </div>
+          {/* <iframe
+            className="w-full h-52 md:h-64 rounded-xl shadow-card md:order-0"
+            src="https://www.youtube.com/embed/8fXMtzJ_PXY?rel=0&modestbranding=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe> */}
           <video controls className="w-full rounded-xl shadow-card md:order-0">
             <source src="/video/Ruta.mp4" type="video/mp4" />
           </video>
