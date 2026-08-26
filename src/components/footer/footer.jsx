@@ -18,7 +18,7 @@ export default function Footer() {
               <img src="/images/icons/instagram.png" alt="Instagram" className="w-5 h-5" />
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=5492352409793"
+              href="https://api.whatsapp.com/send?phone=5492352402805"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"

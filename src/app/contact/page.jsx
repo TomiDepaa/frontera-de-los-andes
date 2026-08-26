@@ -15,7 +15,7 @@ const contactMethods = [
     title: "WhatsApp",
     description: "Escribinos directo para consultas y reservas.",
     cta: "Enviar mensaje",
-    href: "https://api.whatsapp.com/send?phone=5492352409793",
+    href: "https://api.whatsapp.com/send?phone=5492352402805",
   },
   {
     icon: "/images/icons/instagramGreen.png",
