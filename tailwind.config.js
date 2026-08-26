@@ -11,7 +11,7 @@ module.exports = {
         'cabañas-verano': "url('/images/carrouselHome/cabañasVerano.png')",
         'cabañas-invierno': "url('/images/carrouselHome/cabañasInvierno.png')",
         'footer-background': "url('/images/footerBackground.png')",
-        'cabins-headCabins': "url('/images/cabins/InfoCabanas.JPG')",
+        'cabins-headCabins': "url('/images/cabins/InfoCabanas.jpg')",
         'whatToDo': "url('/images/activities/kayakLagoHermoso.jpg')",
       },
       colors: {
